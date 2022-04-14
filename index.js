@@ -9,7 +9,7 @@ const generateScraperUrl = (apiKey) => `http://api.scraperapi.com?api_key=${apiK
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send("Welcome to Amazon API")
+  res.sendFile(`${__dirname}/basic.html`)
 });
 
 //Products Details
